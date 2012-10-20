@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="150" height="50" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="background" value=""/>
+  <property name="background color" value="(120, 120, 120)"/>
+  <property name="gravity" value="(0, 1200)"/>
+  <property name="music" value=""/>
+  <property name="ui files" value=""/>
+ </properties>
+ <tileset name="Collision" firstgid="1">
+  <tile id="0">
+   <image format="png">
+    <data encoding="base64">
+     iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAN0lEQVR42u3XoQ0AMAwEsR8ii3Z/kGzRRqrBcdNLkn7cEkCduwEAAAAAAAAAAAAAAADsA3x7xwN2J5OcglNTLQAAAABJRU5ErkJggg==
+    </data>
+   </image>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="type" value="Example.ExitTile"/>
+   </properties>
+   <image format="png">
+    <data encoding="base64">
+     iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaElEQVR42u3WMQ7AIAwDQKb+If9/qKsWFkSjZkhI1NqSZ04IAq0xDPPRYDQdgAoAEJCB6IviMCEQ1gtgQMQDVgSetyu6CmIfQEEQUOQMpN8Cx4rIXesccM8ESBrHRd6CQoD//ogY5jUnvefRtfFfHFMAAAAASUVORK5CYII=
+    </data>
+   </image>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="type" value="Example.BounceTile"/>
+    <property name="velocity" value="-850"/>
+   </properties>
+   <image format="png">
+    <data encoding="base64">
+     iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAhklEQVR42uXWsQ3AIAxEUS+Q/XfLMkQp0iAl2NjnXwSJ9u6BEGCWGOM8xj2NGv8GPOUYAgXM5e0IFPBW3oZAAatyOQIFeMtlCBQQLS9HrAqkAM8KpbuAAiLBEgQK2AksRaCATFAJAgVUrCCVgQIqT/FWFgpQ3GShTBSgfM1c2Sig40fz1XEBkof1RPbW7dwAAAAASUVORK5CYII=
+    </data>
+   </image>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="facing" value="right"/>
+    <property name="respawn" value="(5, 10)"/>
+    <property name="type" value="Example.KillTile"/>
+    <property name="unit" value="tile"/>
+   </properties>
+   <image format="png">
+    <data encoding="base64">
+     iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAf0lEQVR42uXQ0Q3AIAiEYWbqQJ3NnTrQ1WdbAyp4CZL8z/cFkbW7a5cQ76mBCQATgKazAOh0BgBKuQEwlhOAwXIBfkdKKdsQXYCCiB/f8QUVEPkF03jkF8yAiC8MjUcgqICpcU8EFbA07oGgAlzGVxBUgOv4DAKbo45/EFQAmL3bxujj9crX6gAAAABJRU5ErkJggg==
+    </data>
+   </image>
+  </tile>
+ </tileset>
+ <tileset name="Animated Tiles" firstgid="5">
+  <tile id="0">
+   <properties>
+    <property name="frame delay" value="5"/>
+    <property name="frame size" value=""/>
+    <property name="hold frame" value=""/>
+    <property name="key color" value=""/>
+    <property name="offset" value=""/>
+    <property name="sheet path" value="../../gfx/sprites/tile_arrow_anim.png"/>
+    <property name="total frames" value="3"/>
+    <property name="type" value="Example.AnimatedTile"/>
+   </properties>
+   <image format="png">
+    <data encoding="base64">
+     iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADoklEQVR42u2XSyxcURjHkViQdFQjaQw16tFOtQwGZcowZrwq9TaGUaopijGiiFciKuqV2Nh5S0SpLrAhISIRElbESsQSYWEhETbk3/ud5oo2EjWXVlKLf845d+493+8732PuNTMzM8M/1i0BMJQd/VXdAdwIgI2tLVyfSiGT+0EZroYuQw+pVHpzAGJHJ7hLnyEoOARRMbHQ6nQYGBjA5uYmDAYD7O3t4Rf06noAHood4ChxxguZN8I0GkTGvEZBQQHW1tawvr4OiUQCKysrLC8vY3V1FbbcaRCAIlR14f6XAoju28LZzQ3ygEBEx8aipKQEzc3N2N7eRmdnJ6ytrZGTk4ONjQ20t7fD0tISubm5GBn9ji/cfWGaSISoVNwJmRiCYI58ZWUFZWVl0Ov1sLCwQHd3N3Z2diCTySASiTA/P4+vI9/wJjERgcFKePsHQPLYBfdENjA3NxeWhCGqcCwsLGBychI9PT2Qy+XY29tDd28vtGk6qDQR8OEMOjxywgM7uyvn0aUAnr5yTE1NYXh4mIFUVVXByy8AnnJ/PPeR45nM549F+XNlAHpQq9Uy7ycmJjA0NMRiTDIajejr68P4+Dg6OjpYftTV1bHTGhsbQ3FxMYqKipgDs7Oz8PDyvjqABwcwPT2N0tJSVFRUoLKyEvX19UhISGD3K5VKnJycYH9/H2KxmF0jg6enp8jPz2frrKwstvYNeGkawNLSEgYHB6FQKBAfH8+Sbnd3F3l5eVCr1RgdHcXBwQFmZmbYWsf1ga2tLSaqkFiueubm5uDFhezKAM7uT1jMNVHRrO4p6dQRkUwqDa8IJvo9TK1BKNf9QsN/jkouiUlBIaFsH5MaET347v0HVoaZmZno5SqAxqOjI5Yb6enpzOu0tDT09/cjNTUVKSkpbJ6cnIykpCS8zc4WBmAwliAjI4PFleJJhg8PD9mxV1dX/wJAc4KgORlP5PrDx8JCYQCfyiuQzXlBmy4uLuL4+JiN1O/5aySa82sa6XQIwMhViCCAqpoathmFgU6AQkBzKk0+NFSiXV1drGooASlJKRRUMeXl5cIAPjc0sH7Ae3iRzp8CQdJI3hNAbW2tMIDW1lYW14tEXpIo4UjkLRnmjVPpUp4IAmhpaWGb88Z+N8pnO590ZJg3HhcXd9bCTQZoa2tjELzoL/m8mpqaztTY2HimBi50JOqgJgM4ubiyh4WK9jH5jeg63v0Fv5Jdt/G774LbCfDffh3/AO85gbE5UB1xAAAAAElFTkSuQmCC
+    </data>
+   </image>
+  </tile>
+ </tileset>
+ <layer name="collision tiles" width="150" height="50">
+  <properties>
+   <property name="animated" value="false"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3aMQrDMAAEQYvk/29O7yIQuMCSzIAquzhYlTrXdZ3I4XdUelZ2sFHpWdnBRqVnZQcblZ6VHWxUelZ2sFHpWdnBRqVnZQcblZ6VHWxUelZ2sFHpWdnBRqVnZQcblZ6VHWxUelZ2sFHpWdnBRqVnZQcblZ6VHWxUelZ2sFHpWdnBxurN8KffvUP+X+/ux+N2zu2f5+24NwAAAAAAAAAAAAAAAAAAAAAA3/UCvCSaaTB1AAA=
+  </data>
+ </layer>
+ <layer name="exit tiles" width="150" height="50">
+  <properties>
+   <property name="animated" value="false"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3SQQkAAAgAMbF/aL8GUFDY4BpcBAAAAAAAAAAAAN9kC6b4ig2+YoOvAAAAAAAAAAAAAAAAAAAAAADgtgLA+P1CMHUAAA==
+  </data>
+ </layer>
+ <objectgroup name="cameras" width="0" height="0">
+  <object name="camera 1" type="Utilities.Camera" x="-2" y="402" width="400" height="300">
+   <properties>
+    <property name="display view" value="(0, 0, 800, 600)"/>
+    <property name="order" value="1"/>
+    <property name="target" value="Player 1"/>
+    <property name="ui files" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="camera collision" width="150" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3OAQ0AAAgDoNu/tDG+KSQgAQAAAAAArpp2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4ZwFC1nn0MHUAAA==
+  </data>
+ </layer>
+ <objectgroup name="collision groups" width="0" height="0">
+  <object name="player group" type="Core.CollisionGroup" x="52" y="57" width="32" height="32">
+   <properties>
+    <property name="collides with" value="player group"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="players" width="0" height="0">
+  <object name="Player 1" type="Example.PlatformerPlayer" x="180" y="509" width="30" height="94">
+   <properties>
+    <property name="collision groups" value="player group"/>
+    <property name="player" value="1"/>
+   </properties>
+  </object>
+  <object name="Player 2" type="Example.PlatformerPlayer" x="106" y="509" width="30" height="94">
+   <properties>
+    <property name="collision groups" value="player group"/>
+    <property name="player" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="animated" width="150" height="50">
+  <properties>
+   <property name="animated" value="true"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3DoQ0AAAwCMMz+f3meCxBt0gQAAAAAAAAAAAAAAPZdBQAAAAAAAAAAAAAAAAAAAABg0wPNxQ19MHUAAA==
+  </data>
+ </layer>
+</map>

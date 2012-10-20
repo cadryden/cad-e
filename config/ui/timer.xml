@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel x="700" y="10" width="80" height="50" >
+	<widget type="UI.Box" x="2" y="0" width="56" height="40" color="(200, 200, 200, 150)" /> 
+	<widget type="UI.Textured" x="0" y="0" width="80" height="50" graphic="content/gfx/elements/timerHolder.png" />
+	<panel x="0" y="0" width="80" height="80" >
+		<widget type="Example.PlatformerTimer" x="6" y="9" font="content/fonts/upheavtt.ttf" size="24" start="00.0" direction="up" />
+	</panel>
+</panel>

@@ -1,0 +1,7 @@
+<panel type="Example.PlatformerPauseMenu" x="0" y="0" width="800" height="600" name="Pause Menu">
+  <widget type="UI.Box" x="0" y="0" width="800" height="600" color="(25, 25, 25, 100)" /> 
+  <widget type="UI.Text" x="252" y="100" font="content\fonts\upheavtt.ttf" size="100" text="PAUSE" color="(255, 255, 0, 255)" /> 
+  <widget type="Example.PlatformerMenuButton" x="267" y="250" width="207" height="69" name="Resume" above="Main" below="Restart" font="content\fonts\upheavtt.ttf" size="72" text="RESUME" color="(220, 220, 220, 255)" />
+  <widget type="Example.PlatformerPlayMenuButton" x="253" y="325" width="187" height="69" name="Restart" above="Resume" below="Main" font="content\fonts\upheavtt.ttf" size="72" text="RESTART" color="(220, 220, 220, 255)" /> 
+  <widget type="Example.PlatformerMenuButton" x="210" y="400" width="207" height="69" name="Main" target="Main Menu" above="Restart" below="Resume" font="content\fonts\upheavtt.ttf" size="72" text="MAIN MENU" color="(220, 220, 220, 255)" />
+</panel>

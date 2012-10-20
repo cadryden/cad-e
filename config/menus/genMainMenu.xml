@@ -1,0 +1,8 @@
+<panel type="Example.PlatformerMenu" x="0" y="0" width="800" height="600" name="Main Menu" >
+	<widget type="UI.Textured" x="0" y="0" width="800" height="600" graphic="content\gfx\elements\title.png" />
+	<widget type="UI.Box" x="0" y="0" width="800" height="600" color="(0, 0, 0, 50)" /> 
+	<widget type="UI.Text" x="57" y="100" font="content\fonts\upheavtt.ttf" size="100" text="CUBOID CLASH" color="(255, 255, 0, 255)" />
+	<widget type="Example.PlatformerMenuButton" x="151" y="325" width="256" height="69" name="level select" above="option" below="option" target="Level Select" font="content\fonts\upheavtt.ttf" size="72" text="LEVEL SELECT" color="(220, 220, 220, 255)" />
+	<widget type="Example.PlatformerMenuButton" x="276" y="410" width="256" height="69" name="option" above="level select" below="level select" target="Options" font="content\fonts\upheavtt.ttf" size="72" text="OPTION" color="(220, 220, 220, 255)" />
+	<widget type="UI.Text" x="193" y="570" font="content\fonts\upheavtt.ttf" size="24" text="Chris Alvarado-Dryden - 2010" color="(255, 255, 255, 255)" />
+</panel>

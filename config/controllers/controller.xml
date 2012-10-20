@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- player 1-->
+<controllers>
+<controller>
+	<button name='Jump'>
+		<key>119</key>
+		<key>32</key>
+	</button>
+	<button name='Throw'>
+		<key>102</key>
+	</button>
+	<button name='Quit'>
+		<key>27</key>
+	</button>
+	<button name='Enable BBox'>
+		<key>8</key>
+	</button>
+	<button name='Back'>
+		<key>45</key>
+	</button>
+	<button name='Pause'>
+		<key>49</key>
+	</button>
+	<dpad up='119' down='115' left='97' right='100'/>
+</controller>
+<!-- player 2-->
+<controller>
+	<button name='Jump'>
+		<key>105</key>
+		<key>39</key>
+	</button>
+	<button name='Throw'>
+		<key>59</key>
+	</button>
+	<dpad up='105' down='107' left='106' right='108'/>
+	<button name='Back'>
+		<key>61</key>
+	</button>
+	<button name='Pause'>
+		<key>56</key>
+	</button>
+	<button name='Enable BBox'>
+		<key>8</key>
+	</button>
+</controller>
+</controllers>

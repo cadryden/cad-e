@@ -1,0 +1,6 @@
+<panel type="Example.PlatformerMenu" x="0" y="0" width="800" height="600" name="Level Select">
+  <widget type="UI.Textured" x="250" y="1" width="800" height="600" graphic="content\gfx\elements\redScratch.png" />
+  <widget type="UI.Box" x="0" y="0" width="800" height="600" color="(0, 0, 0, 50)" /> 
+  <widget type="UI.Text" x="60" y="100" font="content\fonts\upheavtt.ttf" size="100" text="LEVEL SELECT" color="(255, 255, 0, 255)" /> 
+  <widget type="Example.PlatformerMenuButton" x="100" y="450" width="207" height="69" name="Back" target="Main Menu" font="content\fonts\upheavtt.ttf" size="72" text="BACK" color="(220, 220, 220, 255)" />
+</panel>

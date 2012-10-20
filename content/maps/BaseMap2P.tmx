@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map SYSTEM "http://mapeditor.org/dtd/1.0/map.dtd">
+<map version="1.0" orientation="orthogonal" width="150" height="50" tilewidth="32" tileheight="32">
+ <properties>
+  <property name="background" value=""/>
+  <property name="background color" value=""/>
+  <property name="gravity" value=""/>
+  <property name="music" value=""/>
+  <property name="ui files" value=""/>
+ </properties>
+ <tileset name="Collision" firstgid="1">
+  <tile id="0">
+   <image format="png">
+    <data encoding="base64">
+     iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAN0lEQVR42u3XoQ0AMAwEsR8ii3Z/kGzRRqrBcdNLkn7cEkCduwEAAAAAAAAAAAAAAADsA3x7xwN2J5OcglNTLQAAAABJRU5ErkJggg==
+    </data>
+   </image>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="type" value="Example.ExitTile"/>
+   </properties>
+   <image format="png">
+    <data encoding="base64">
+     iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAaElEQVR42u3WMQ7AIAwDQKb+If9/qKsWFkSjZkhI1NqSZ04IAq0xDPPRYDQdgAoAEJCB6IviMCEQ1gtgQMQDVgSetyu6CmIfQEEQUOQMpN8Cx4rIXesccM8ESBrHRd6CQoD//ogY5jUnvefRtfFfHFMAAAAASUVORK5CYII=
+    </data>
+   </image>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="type" value="Example.BounceTile"/>
+    <property name="velocity" value="-850"/>
+   </properties>
+   <image format="png">
+    <data encoding="base64">
+     iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAhklEQVR42uXWsQ3AIAxEUS+Q/XfLMkQp0iAl2NjnXwSJ9u6BEGCWGOM8xj2NGv8GPOUYAgXM5e0IFPBW3oZAAatyOQIFeMtlCBQQLS9HrAqkAM8KpbuAAiLBEgQK2AksRaCATFAJAgVUrCCVgQIqT/FWFgpQ3GShTBSgfM1c2Sig40fz1XEBkof1RPbW7dwAAAAASUVORK5CYII=
+    </data>
+   </image>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="facing" value="right"/>
+    <property name="respawn" value="(5, 10)"/>
+    <property name="type" value="Example.KillTile"/>
+    <property name="unit" value="tile"/>
+   </properties>
+   <image format="png">
+    <data encoding="base64">
+     iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAf0lEQVR42uXQ0Q3AIAiEYWbqQJ3NnTrQ1WdbAyp4CZL8z/cFkbW7a5cQ76mBCQATgKazAOh0BgBKuQEwlhOAwXIBfkdKKdsQXYCCiB/f8QUVEPkF03jkF8yAiC8MjUcgqICpcU8EFbA07oGgAlzGVxBUgOv4DAKbo45/EFQAmL3bxujj9crX6gAAAABJRU5ErkJggg==
+    </data>
+   </image>
+  </tile>
+ </tileset>
+ <layer name="collision tiles" width="150" height="50">
+  <properties>
+   <property name="animated" value="false"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3aMQrDMAAEQZvk/28OadUZLrCEGVCl5mBV6r6u644c/kelZ2UHG5WelR1sVHpWdrBR6VnZwUalZ2UHG5WelR1sVHpWdrBR6VnZwUalZ2UHG5WelR1sVHpWdrBR6VnZwUalZ2UHG5WelR1sVHpWdrBR6VnZwUalZ2UHG5WelR1srP4MP733D5nT9w28jnMf9+/jeDcAAAAAAAAAAAAAAAAAAAAAAL/1AR/Gx1QwdQAA
+  </data>
+ </layer>
+ <layer name="exit tiles" width="150" height="50">
+  <properties>
+   <property name="animated" value="false"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3SQQkAAAgAMbF/aL8GUFDY4BpcBAAAAAAAAAAAAN9kC6b4ig2+YoOvAAAAAAAAAAAAAAAAAAAAAADgtgLA+P1CMHUAAA==
+  </data>
+ </layer>
+ <objectgroup name="cameras" width="0" height="0">
+  <object name="camera 1" type="Utilities.Camera" x="250" y="189" width="800" height="300">
+   <properties>
+    <property name="display view" value="0, 0, 800, 300"/>
+    <property name="order" value="1"/>
+    <property name="target" value="Player 1"/>
+    <property name="ui files" value="../../config/ui/Player1UI.xml"/>
+   </properties>
+  </object>
+  <object name="camera 2" type="Utilities.Camera" x="14" y="381" width="800" height="300">
+   <properties>
+    <property name="display view" value="0, 300, 800, 300"/>
+    <property name="order" value="2"/>
+    <property name="target" value="Player 2"/>
+    <property name="ui files" value="../../config/ui/Player2UI.xml"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="camera collision" width="150" height="50">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAAAO3OAQ0AAAgDoNu/tDG+KSQgAQAAAAAArpp2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4ZwFC1nn0MHUAAA==
+  </data>
+ </layer>
+ <objectgroup name="collision groups" width="0" height="0">
+  <object name="player group" type="Core.CollisionGroup" x="52" y="57" width="32" height="32">
+   <properties>
+    <property name="collides with" value="player group"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="players" width="0" height="0">
+  <object name="Player 1" type="Example.PlatformerPlayer" x="602" y="315" width="30" height="94">
+   <properties>
+    <property name="collision groups" value="player group"/>
+    <property name="player" value="1"/>
+   </properties>
+  </object>
+  <object name="Player 2" type="Example.PlatformerPlayer" x="376" y="511" width="30" height="94">
+   <properties>
+    <property name="collision groups" value="player group"/>
+    <property name="player" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
