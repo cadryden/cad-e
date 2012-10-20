@@ -15,7 +15,7 @@ To use CAD-E you'll need
 
   - Python 2.7.x
   - PyGame 1.9.1
-  - [Tiled 0.7.2 Java] (optional, for editing levels)
+  - [Tiled 0.7.2 Java]  - optional, for editing levels
 
 For more information visit http://cadryden.com/
 
